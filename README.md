@@ -24,7 +24,7 @@ brew "setup-doctor"
 
 ## What this formula does
 
-Installs the real, published `setup-doctor` npm package (`depends_on "node"`, then `npm install` inside the formula's own prefix, with the CLI symlinked into Homebrew's `bin`). It tracks the same releases published to [npmjs.com/package/setup-doctor](https://www.npmjs.com/package/setup-doctor); this tap's own `autobump.yml` workflow checks daily and opens a pull request when a new version is published.
+Installs the real, published `setup-doctor` npm package (`depends_on "node"`, then `npm install` inside the formula's own prefix, with the CLI symlinked into Homebrew's `bin`). It tracks the same releases published to [npmjs.com/package/setup-doctor](https://www.npmjs.com/package/setup-doctor); this tap's own `autobump.yml` workflow checks daily and opens a pull request when a new version is published. Every pull request against this formula is built and tested end to end by this tap's own CI (`brew test-bot`) before it merges.
 
 ## Documentation
 
